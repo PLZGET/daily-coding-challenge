@@ -2,7 +2,7 @@
 from collections import deque
 
 def bfs(graph, start_v):
-    visited = []  # 방문한 노드 리스트
+    visited = [start_v]  # 방문한 노드 리스트
     queue = deque([start_v])  # 큐를 올바르게 초기화
     
     while queue:
